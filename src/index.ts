@@ -15,7 +15,7 @@ interface RepeatHandler {
 }
 
 const RepeatHandler: Schema<RepeatHandler> = Schema.object({
-  minTimes: Schema.natural().min(2).default(2).required().description('最少重复次数。'),
+  minTimes: Schema.natural().min(2).default(2).description('最少重复次数。'),
   probability: Schema.percent().default(1).description('复读发生概率。'),
 })
 
